@@ -1,0 +1,91 @@
+\documentclass[12pt]{article}
+
+\usepackage{graphicx}
+\usepackage[margin=1.0in]{geometry}
+\usepackage{amsmath}
+\usepackage{cases}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{grffile}
+\usepackage{setspace}
+
+\setlength\parindent{0pt}
+
+\author{Xiaohui Chen \\EID: xc2388}
+\title{M 362K Post-Class Homework 10}
+
+
+\begin{document}
+\maketitle
+\begin{spacing}{2.0}
+
+\section*{4-7}
+
+\subsection*{(a)}
+
+$Pr(68<X\le 85)= \frac{85-68}{100}= \frac{17}{100}$
+
+\subsection*{(b)}
+
+This is a discrete uniform distribution with probability $\frac{1}{100}$
+
+$\therefore E[X]= \frac{1+100}{2}=50.5$
+
+\subsection*{(c)}
+
+Since this is a discrete uniform distribution, there is no mode
+
+\subsection*{(d)}
+
+$Var[X]=\frac{100^2-1}{12}=833.25$
+
+\section*{4-10}
+
+Let $W=5X+45$, where $X$ has the discrete uniform distribution on $1,2,3,4,5$
+
+\subsection*{(a)}
+
+$Pr(W\ge 55)= Pr(5X+45 \ge55)= Pr(X\ge 2)= \frac{4}{5}$
+
+\subsection*{(b)}
+
+$E[W]=E[5X+45]= 5E[X]+45= 5*\frac{1+5}{2} +45 = 60$
+
+\subsection*{(c)}
+
+$Var[Y]=Var[5X+45]= 5^2*Var[X]= 25*\frac{5^2-1}{12}= 50$
+
+$\therefore \sigma_W=\sqrt{Var[Y]}= \sqrt{50}= 7.07$
+
+\section*{4-11}
+
+Statement I: The probability distribution of $Y$ is uniform, which is $\frac{1}{n}$
+
+Statement II: The expected value of $Y$ is $E[Y]=E[aX+b]= aE[X]+b$, where $E[X]$ is the expected value of $X$
+
+Statement III: The variance of $Y$ is $Var[Y]= a^2Var[X]$, where $Var[X]$ is the variance of $X$
+
+\section*{4-21}
+
+Let X be the random variable which denotes the number of passengers show up
+
+$Pr(X>30) = Pr(X=31)+Pr(X=32)= {}_{32}C_{31} 0.9^31*0.1 + 0.9^32= 0.1564$
+
+Therefore the answer is (E)
+
+\section*{4-22}
+
+Let X be the random variable which denotes the number of hurricanes in a 20-year period
+
+$Pr(X<3)= Pr(X=0)+ Pr(X=1) + Pr(X=2)= 0.95^{20}+ {}_{20}C_{1} 0.05*0.95^{19} + {}_{20}C_{2} 0.05^2*0.95^{18}= 0.92$
+
+Therefore the answer is (E)
+
+\section*{4-24}
+
+$E[X]= n*p= 5*0.65= 3.25$
+
+$Pr(X>E[X])= Pr(X=4)+ Pr(X=5)= {}_{5}C_{4} 0.65^4* 0.35+ 0.65^5= 0.428415$
+
+\end{spacing}
+\end{document}

@@ -1,0 +1,317 @@
+\documentclass[12pt]{article}
+
+\usepackage{graphicx}
+\usepackage[margin=1.0in]{geometry}
+\usepackage{amsmath}
+\usepackage{cases}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{grffile}
+\usepackage{setspace}
+
+\setlength\parindent{0pt}
+
+\author{Xiaohui Chen \\EID: xc2388}
+\title{M 362K Post-Class Homework 9}
+
+
+\begin{document}
+\maketitle
+\begin{spacing}{2.0}
+
+\section*{3-39}
+
+Let L be the random variable that represents the amount of loss
+
+The probability distribution given the loss is greater than 0 is shown below:
+
+\begin{tabular}{|c|c|c|c|c|c|}
+  \hline
+  % after \\: \hline or \cline{col1-col2} \cline{col3-col4} ...
+  l & 500 & 1,000 & 10,000 & 50,000 & 100,000 \\
+  \hline
+  $Pr(L=l|L>0)$ & 0.6 & 0.3 & 0.08 & 0.01 & 0.01 \\
+  \hline
+\end{tabular}
+
+$\therefore E[L|L>0]= 500*0.6+ 1000*0.3 + 10000*0.08 + 50000*0.01 +100000*0.01=2900$
+
+The expected amount of loss is 2900
+
+\section*{3-40}
+
+\subsection*{(a)}
+
+Let $x=Pr(D=5000)$ and $y=Pr(D=10000)$
+
+Then $x+y=1-0.82-0.1=0.08$ and $5000x+10000y=600-1000*0.1$
+
+By solving the above two equations, we get $x=0.06$ and $y=0.02$
+
+$\therefore Pr(D=5000)=0.06$ and $Pr(D=10000)=0.02$
+
+\subsection*{(b)}
+
+$E[D^2]= 0*0.82+ 1000^2*0.1+ 5000^2*0.06 + 10000^2*0.02 = 360000$
+
+$Var[D]= E[D^2]-(E[D])^2= 0$
+
+$\sigma_D=\sqrt{Var[D]}=0$
+
+\subsection*{(c)}
+
+The probability distribution given that $D>0$ is shown below:
+
+\begin{tabular}{|c|c|c|c|}
+  \hline
+  % after \\: \hline or \cline{col1-col2} \cline{col3-col4} ...
+  d & 1000 & 5000 & 10000 \\
+  \hline
+  $Pr(D=d|D>0)$ & $\frac{1}{9}$ & $\frac{6}{9}$ & $\frac{2}{9}$ \\
+  \hline
+\end{tabular}
+
+$\therefore E[D|D>0]= 1000*\frac{1}{9} +5000*\frac{6}{9} +10000*\frac{2}{9}=\frac{17000}{3} \approx 5666.67$
+
+\subsection*{(d)}
+
+$E[D^2|D>0]= 1000^2*\frac{1}{9} +5000^2*\frac{6}{9} +10000^2*\frac{2}{9}=39000000$
+
+$Var[D]= E[D^2|D>0]- (E[D|D>0])^2= 39000000-\left( \frac{17000}{3} \right)^2= \frac{62000000}{9} \approx 6.88889*10^6$
+
+\section*{3-41}
+
+\subsection*{(a)}
+
+The probability distribution of X and Y are shown below:
+
+\begin{tabular}{|c|c|c|}
+  \hline
+  % after \\: \hline or \cline{col1-col2} \cline{col3-col4} ...
+  x & 0 & 1 \\
+  \hline
+  $Pr(X=x)$ & 0.5 & 0.5 \\
+  \hline
+\end{tabular}
+
+\begin{tabular}{|c|c|c|c|}
+  \hline
+  % after \\: \hline or \cline{col1-col2} \cline{col3-col4} ...
+  y & 0 & 1 & 2 \\
+  \hline
+  $Pr(Y=y)$ & 0.25 & 0.5 & 0.25 \\
+  \hline
+\end{tabular}
+
+$E[X]=0*0.5 +1*0.5=0.5$
+
+$E[X^2]= 0*0.5 +1^2*0.5=0.5$
+
+$Var[X]= E[X^2]- (E[X])^2=0.25$
+
+\subsection*{(b)}
+
+$E[Y]=0*0.25 +1*0.5+ 2*0.25= 1$
+
+$E[Y^2]= 0^2*0.25 +1^2*0.5+ 2^2*0.25= 1.5$
+
+$Var[Y]= E[Y^2]- (E[Y])^2=0.5$
+
+\subsection*{(c)}
+
+The probability distribution of $X+Y$ is shown below
+
+\begin{tabular}{|c|c|c|c|c|}
+  \hline
+  % after \\: \hline or \cline{col1-col2} \cline{col3-col4} ...
+  $X+Y$ & 0 & 1 & 2 & 3 \\
+  \hline
+  $Pr(X+Y)$ & 0.25 & 0.25 & 0.25 & 0.25 \\
+  \hline
+\end{tabular}
+
+$E[X+Y]=0*0.25+ 1*0.25 +2*0.25 +3*0.25=1.5$
+
+$E[(X+Y)^2]= 0^2*0.25+ 1^2*0.25 +2^2*0.25 +3^2*0.25= 3.5$
+
+$Var[X+Y]=E[(X+Y)^2]- (E[X+Y])^2= 1.25$
+
+\subsection*{(d)}
+
+$Var[X]+ Var[Y]= 0.25+0.5=0.75 \ne 1.25=Var[X+Y]$
+
+\section*{3-43}
+
+\subsection*{(a)}
+
+The probability distribution of X is shown below:
+
+\begin{tabular}{|c|c|c|c|}
+  \hline
+  % after \\: \hline or \cline{col1-col2} \cline{col3-col4} ...
+  x & 0 & 1 & 2 \\
+  \hline
+  $Pr(X=x)$ & 0.25 & 0.5 & 0.25 \\
+  \hline
+\end{tabular}
+
+$E[X]=0*0.25 +1*0.5 +2*0.25= 1$
+
+$E[X^2]= 0^2*0.25 +1^2*0.5 +2^2*0.25= 1.5$
+
+$Var[X]= E[X^2]- (E[X])^2= 0.5$
+
+\subsection*{(b)}
+
+The probability distribution of Y is shown below:
+
+\begin{tabular}{|c|c|c|c|}
+  \hline
+  % after \\: \hline or \cline{col1-col2} \cline{col3-col4} ...
+  y & 0 & 1 & 2 \\
+  \hline
+  $Pr(Y=y)$ & $\frac{4}{9}$ & $\frac{4}{9}$ & $\frac{1}{9}$ \\
+  \hline
+\end{tabular}
+
+$E[Y]= 0*\frac{4}{9} +1*\frac{4}{9} +2*\frac{1}{9}= \frac{2}{3}$
+
+$E[Y^2]= 0*\frac{4}{9} +1^2*\frac{4}{9} +2^2*\frac{1}{9}= \frac{8}{9}$
+
+$Var[Y]= E[Y^2]- (E[Y])^2= \frac{8}{9}- \left(\frac{2}{3}\right)^2 = \frac{4}{9}$
+
+\subsection*{(c)}
+
+The probability distribution of X+Y is shown below:
+
+\begin{tabular}{|c|c|c|c|c|c|}
+  \hline
+  % after \\: \hline or \cline{col1-col2} \cline{col3-col4} ...
+  X+Y & 0 & 1 & 2 & 3 & 4 \\
+  \hline
+  $Pr(X+Y)$ & $\frac{4}{36}$ & $\frac{12}{36}$ & $\frac{13}{36}$ & $\frac{6}{36}$ & $\frac{1}{36}$ \\
+  \hline
+\end{tabular}
+
+$E[X+Y]= 0*\frac{4}{36} +1*\frac{12}{36}+ 2*\frac{13}{36} +3*\frac{6}{36} +4*\frac{1}{36}= \frac{5}{3}$
+
+$E[(X+Y)^2]=0^2*\frac{4}{36} +1^2*\frac{12}{36}+ 2^2*\frac{13}{36} +3^2*\frac{6}{36} +4^2*\frac{1}{36}= \frac{67}{18}$
+
+$Var[X+Y]= E[(X+Y)^2]- (E[X+Y])^2= \frac{67}{18} - \left(\frac{5}{3} \right)^2=  \frac{17}{18}$
+
+\subsection*{(d)}
+
+$Var[X]+Var[Y]= 0.5+ \frac{4}{9} =\frac{17}{18} = Var[X+Y]$
+
+It is equal because the outcomes of X and Y are independent
+
+\section*{3-44}
+
+\subsection*{(a)}
+
+Let B represents a boy is born and G represents a girl is borned
+
+Therefore the outcome is shown below:
+
+\begin{tabular}{|c|c|c|c|c|c|}
+  \hline
+  % after \\: \hline or \cline{col1-col2} \cline{col3-col4} ...
+  Outcome & $X_1$ & $X_2$ & $X_3$ & $X_1+X_2+X_3$ & Probability \\
+  \hline
+  BBB & 0 & 0 & 0 & 0 & 0.125 \\
+  \hline
+  BBG & 0 & 0 & 1 & 1 & 0.125 \\
+  \hline
+  BGB & 0 & 1 & 0 & 1 & 0.125 \\
+  \hline
+  GBB & 1 & 0 & 0 & 1 & 0.125 \\
+  \hline
+  GGB & 1 & 1 & 0 & 2 & 0.125 \\
+  \hline
+  GBG & 1 & 0 & 1 & 2 & 0.125 \\
+  \hline
+  BGG & 0 & 1 & 1 & 2 & 0.125 \\
+  \hline
+  GGG & 1 & 1 & 1 & 3 & 0.125 \\
+  \hline
+\end{tabular}
+
+The probability distribution of X is shown below:
+
+\begin{tabular}{|c|c|c|c|c|}
+  \hline
+  % after \\: \hline or \cline{col1-col2} \cline{col3-col4} ...
+  X & 0 & 1 & 2 & 3 \\
+  \hline
+  $Pr(X)$ & 0.125 & 0.375 & 0.375 & 0.125 \\
+  \hline
+\end{tabular}
+
+Therefore $X=X_1+X_2+X_3$
+
+\subsection*{(b)}
+
+$E[X_i]=0*0.5+1*0.5=0.5$
+
+$E[X_i^2]= 0^2*0.5+1^2*0.5=0.5$
+
+$Var[X_i]=E[X_i^2]-(E[X_i])^2= 0.25$
+
+\subsection*{(c)}
+
+$E[X]=E[X_1]+E[X_2] +E[X_3]= 1.5$
+
+$Var[X]=Var[X_1]+Var[X_2] +Var[X_3]= 0.75$
+
+The results are consistent
+
+\section*{Sample Exam 3}
+
+\subsection*{(a)}
+
+Let X be the value of the datapoint
+
+$mean=E[X]=\frac{1}{24}*(7+ 8+ 4+ 6+ 9+ 10+ 2+ 7+ 8+ 9+ 3+ 6+ 9+ 8+ 4+ 9+ 6+ 5+ 9+ 8+ 7+ 9+ 0+ 3)= 6.5$
+
+$median=\frac{7+7}{2}=7$
+
+$mode= 9$
+
+$midrange=\frac{0+10}{2}=5$
+
+\subsection*{(b)}
+
+$min=0$ and $max=10$
+
+\subsection*{(c)}
+
+Let $i$ be the rank of the 80th percentile number
+
+$i=0.8*(24+1)=20$
+
+Therefore the 80th percentile number is 9
+
+\subsection*{(d)}
+
+$E[X^2]= \frac{1}{24}*(7^2+ 8^2+ 4^2+ 6^2+ 9^2+ 10^2+ 2^2+ 7^2+ 8^2+ 9^2+ 3^2+ 6^2+ 9^2+ 8^2+ 4^2+ 9^2+ 6^2+ 5^2+ 9^2+ 8^2+ 7^2+ 9^2+ 0^2+ 3^2)= 49$
+
+$Var=E[X^2]-(E[X])^2= \frac{162}{23}$  
+
+Let $\sigma$ denotes the standard deviation
+
+$\sigma=\sqrt{Var}= 9 \sqrt{\frac{2}{23}} \approx 2.65396$
+
+\subsection*{(e)}
+
+Let COV denotes coefficient of variance
+
+$COV= \frac{100*\sigma}{mean} \% \approx 40.8301 \% $
+
+\subsection*{(f)}
+
+Let z denote the z-score
+
+$z=\frac{11-mean}{\sigma}\approx 1.69558 $
+
+\end{spacing}
+\end{document}

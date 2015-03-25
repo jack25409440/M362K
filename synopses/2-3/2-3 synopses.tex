@@ -1,0 +1,26 @@
+\documentclass[12pt]{article}
+
+\usepackage{graphicx}
+\usepackage[margin=1.0in]{geometry}
+\usepackage{amsmath}
+\usepackage{cases}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{grffile}
+\usepackage{setspace}
+
+%\setlength\parindent{0pt}
+
+\author{Xiaohui Chen \\EID: xc2388}
+\title{M 362K Synopses for 2/3}
+
+\begin{document}
+\maketitle
+\begin{spacing}{2.0}
+
+Condition probability can be expressed as $Pr(effects|causes)$. However, in most real-life situations the causes cannot be observed directly. Indeed we may only observe the effects and calculate the conditional probabilities of the causes given the effects. Bayes' theorem provides us a method to calculate $Pr(causes|effects)$. It says $Pr(B_j|A)=\frac{Pr(B_j\cap A)}{Pr(A)}=\frac{Pr(B_j)Pr(A|B_j)}{\sum_{i=1}^{n} Pr(B_i)Pr(A|B_i)}$, where $B_i$ are disjoint subsets. 
+
+A most common application of Bayes' theorem is the credibility theory used by auto insurance companies to calculate the premiums. Since the insurance companies are not able to know exactly whether their customers are good drivers, they may use Bayes' theorem to calculate $Pr(good\ drivers|other\ factors)$ based on various factors such as driving history, age, good students, etc. In this way they can adjust the premiums accordingly.
+
+\end{spacing}
+\end{document} 

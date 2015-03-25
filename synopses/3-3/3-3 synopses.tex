@@ -1,0 +1,38 @@
+\documentclass[12pt]{article}
+
+\usepackage{graphicx}
+\usepackage[margin=1.0in]{geometry}
+\usepackage{amsmath}
+\usepackage{cases}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{grffile}
+\usepackage{setspace}
+
+%\setlength\parindent{0pt}
+
+\author{Xiaohui Chen \\EID: xc2388}
+\title{M 362K Synopses for 3/3}
+
+\begin{document}
+\maketitle
+\begin{spacing}{2.0}
+
+The geometric distribution has the probability function $Pr(X=k)= p*(1-p)^k$. X is called geometric random variable with parameter p. The expected value is $E[X]= \frac{1-p}{p}$ and the variance is $Var[X]= \frac{1-p}{p^2}$
+
+A negative binomial process means
+
+(a) The trials are identical
+
+(b) Each trial is independent
+
+(c) The random variable M denotes the number of failures prior to the $r^{th}$ success
+
+(d) The probability of success is $p$ and the probability of failure is $q=1-p$
+
+Such distribution is given by $Pr(M=k)={}_{r+k-1}C_{k} p^r*(1-p)^k$. The expected value of failure is $E[M]= r*\frac{1-p}{p}$ and the variance is $Var[M]= r*\frac{1-p}{p^2}$
+
+The hyper-geometric distribution is given by $Pr(X=k)= \frac{{}_{G}C_{k}*{}_{B}C_{n-k}}{{}_{G+B}C_{n}}$ where X is a hyper-geometric random variable. The expected value is given by $E[X]= n*\left( \frac{B}{B+G} \right)$ and the variance is given by $Var[X]= n*\left( \frac{B}{B+G} \right)*\left( \frac{G}{B+G} \right)*\left( \frac{B+G-n}{B+G-1} \right)$.
+
+\end{spacing}
+\end{document} 

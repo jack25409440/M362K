@@ -1,0 +1,100 @@
+\documentclass[12pt]{article}
+
+\usepackage{graphicx}
+\usepackage[margin=1.0in]{geometry}
+\usepackage{amsmath}
+\usepackage{cases}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{grffile}
+\usepackage{setspace}
+
+\setlength\parindent{0pt}
+
+\author{Xiaohui Chen \\EID: xc2388}
+\title{M 362K Post-Class Homework 1}
+
+\begin{document}
+\maketitle
+\begin{spacing}{2.0}
+
+\section*{1-7}
+For each of the digit positions, there are 10 possible outcomes
+
+For the first and third alpha positions, each has $26-3=23$ possible outcomes since I,O and Q are excluded
+
+For the second alpha position, there are 26 outcomes
+
+Let $\#plates$ denotes the number of possible licence plates, then $\#plates= 10^{3}* 23^{2} * 26= 1.375*10^{7}$
+
+\section*{1-9}
+From the question we can know that the first digit has $10-2=8$ outcomes and the fourth digit has $10-1=9$ outcomes
+
+Let $\#phone$ denotes the possible number of ten-digit phone numbers. Therefore,
+
+$$\#phone=8*9*10^{10-2}=7.2*10^{9}$$
+
+\section*{1-12}
+According to the question, the number of possible outcomes for the trifeeta with 8 horses is ${}_{8}P_{1} *{}_{7}P_{1} * {}_{6}P_{1}$
+
+Therefore, $Pr(winning\ ticket)=\frac{1}{{}_{8}P_{1} *{}_{7}P_{1} * {}_{6}P_{1}}=\frac{1}{8*7*6}= \frac{1}{336}$
+
+\section*{1-17}
+According to the question, there are 11 possible floors and 7 people. The total number of possible outcomes is $11^{7}$
+
+If no two will get of at the same floor, this is equivalent to the permutation of 11 floors chosen 7, which is ${}_{11}P_{7}$
+
+$\therefore Pr(no\ two\ get\ of\ at\ the\ same\ floor)= \frac{{}_{11}P_{7}}{11^7}= \frac{11!}{(11-7)! 11^7}\approx 0.085$
+
+\section*{1-24}
+\subsection*{(a)}
+There are 13 toppings, 2 sizes and 2 types of crust
+
+Let $\#2-top-pizza$ be the number of different two-topping pizzas
+
+$\therefore \#2-top-pizza= {}_{13}C_{2}* {}_{2}C_{1}* {}_{2}C_{1}= 312$
+
+\subsection*{(b)}
+There are 6 meat toppings, 7 vegetable toppings, 2 sizes and 2 types of crust
+
+Let $\#2-top-mv-pizza$ be the number of different two-topping pizzas with exactly one meat and exactly one vegetable topping
+
+$\therefore \#2-top-mv-pizza= {}_{6}C_{1}*{}_{7}C_{1}* {}_{2}C_{1}* {}_{2}C_{1}=168$
+
+\subsection*{(c)}
+There are 7 vegetable toppings, 2 sizes and 2 types of crust
+
+Let $\#4-top-v-pizza$ be the number of different four-topping vegetarian pizzas
+
+$\therefore \#4-top-v-pizza= {}_{7}C_{4}* {}_{2}C_{1}* {}_{2}C_{1}=140$
+
+\section*{1-32}
+The number of possible words with 4 letters is indeed the permutation of the 4 letters. However, since the order of letter O does not matter, the number of possible words is therefore $\frac{4!}{2}= 12$
+
+\section*{1-36}
+\subsection*{(a)}
+This is equivalent to dividing 25 girls into 3 groups of 5,5,15 girls respectively
+
+Let $\#partition$ denotes the number of such partition
+
+$\therefore \#partition= \left(
+\begin{array}{ccc}
+  & 25 & \\
+5 & 5 & 15 
+\end{array}
+\right)= \frac{25!}{5!*5!*15!}=823727520$
+
+\subsection*{(b)}
+This question is also equivalent to 25 girls into 3 groups of 5,5,15 girls respectively (2 teams of 5 people and 1 group of 15 not playing)
+
+Let $\#partition$ denotes the number of such partition
+
+$\therefore \#partition= \left(
+\begin{array}{ccc}
+  & 25 & \\
+5 & 5 & 15
+\end{array}
+\right)= \frac{25!}{5!*5!*15!}=823727520$
+
+\end{spacing}
+\end{document}

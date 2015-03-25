@@ -1,0 +1,105 @@
+\documentclass[12pt]{article}
+
+\usepackage{graphicx}
+\usepackage[margin=1.0in]{geometry}
+\usepackage{amsmath}
+\usepackage{cases}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{grffile}
+\usepackage{setspace}
+
+\setlength\parindent{0pt}
+
+\author{Xiaohui Chen \\EID: xc2388}
+\title{M 362K Post-Class Homework 4}
+
+
+\begin{document}
+\maketitle
+\begin{spacing}{2.0}
+
+\section*{2-27}
+
+\subsection*{(a)}
+We know that $Pr(car)=\frac{1}{3}$ and $Pr(goat)=\frac{2}{3}$
+
+If you choose to keep the original door, that means you have to select the correct door at the beginning
+
+$\therefore Pr(car|without\ changing\ doors)=Pr(car)= \frac{1}{3}$
+
+\subsection*{(b)}
+
+If I select the door with goat in the first place, then I will win a car for sure if I change the door after the revelation. Otherwise I will be certain that I will win a goat
+
+$\therefore Pr(car|changing\ doors)=\frac{2}{3}*1+ \frac{1}{3}*0=\frac{2}{3}$
+
+\section*{2-29}
+From the question, we know that $Pr(smoker|circulation)= 2x$, $Pr(smoker|non-circulation)=x$, $Pr(circulation)=0.25$
+
+$\therefore Pr(circulation|smoker)= \frac{Pr(smoker|circulation) * Pr(cirulation)}{Pr(smoker|circulation) * Pr(cirulation) + Pr(smoker|non-circulation)*Pr(non-curculation)}= \frac{2x*0.25}{2x*0.25+0.75x}=\frac{2}{5}$
+
+Therefore the answer is (C)
+
+\section*{2-41}
+\begin{tabular}{|c|c|c|c|}
+  \hline
+  % after \\: \hline or \cline{col1-col2} \cline{col3-col4} ...
+    & A & A' &   \\
+  \hline
+  B & a*b & (1-a)*b & b \\
+  \hline
+  B' & a*(1-b) & (1-a)*(1-b) & 1-b \\
+  \hline
+    & a & 1-a &  1 \\
+  \hline
+\end{tabular}
+
+\subsection*{(a)}
+According to the Venn box diagram shown above, $Pr(A\cap B')=a*(1-b) =Pr(A)*Pr(B')$
+
+Therefore, A and B' are independent
+
+\subsection*{(b)}
+$Pr(A'\cap B')=(1-a)*(1-b)= Pr(A')*Pr(B')$
+
+Therefore, A' and B' are independent
+
+\subsection*{(c)}
+$Pr(A' \cap B)=(1-a)*b= Pr(A')*Pr(B)$
+
+Therefore, A' and B are independent
+
+\section*{2-44}
+$Pr(A\cap B')=Pr(A)*Pr(B')=Pr(A)*(1-Pr(B))=Pr(A)-Pr(A)*Pr(B)$
+
+Similarly, we get $Pr(A'\cap B)=Pr(B)-Pr(A)*Pr(B)$
+
+We set $Pr(A\cap B)=Pr(A)*Pr(B)=x$
+
+$\therefore (0.2+x)*(0.3+x)=x$
+
+$x=0.2$ or $x=0.3$
+
+$P(A)=0.2+0.2=0.4$ or $0.2+0.3=0.5$
+
+$P(B)=0.3+0.2=0.5$ or $0.3+0.3=0.6$
+
+$\therefore Pr(A\cup B)=Pr(A)+Pr(B)-Pr(A)*Pr(B)=0.4+0.5-0.2= 0.7$ or $0.5+0.6-0.3=0.8$
+
+\section*{2-52}
+$Pr(first-face)=\frac{12}{52}$ and $Pr(second-face|first-face)=\frac{11}{51}$
+
+$\therefore Pr(first-face\cap second-face)= Pr(first-face)* Pr(second-face|first-face)= \frac{12}{52}* \frac{11}{51}= \frac{11}{221}\approx 0.05$
+
+\section*{2-55}
+Let the number of blue balls be x
+
+$Pr(same\ color)=Pr(blue \cap blue)+ Pr(red\cap red)= \frac{4}{10}*\frac{16}{16+x}+\frac{6}{10}*\frac{x}{16+x}=0.44$
+
+$\therefore x=4$
+
+The number of balls in the second urn is 20. The answer is (B)
+
+\end{spacing}
+\end{document} 

@@ -1,0 +1,36 @@
+\documentclass[12pt]{article}
+
+\usepackage{graphicx}
+\usepackage[margin=1.0in]{geometry}
+\usepackage{amsmath}
+\usepackage{cases}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{grffile}
+\usepackage{setspace}
+
+\setlength\parindent{0pt}
+
+\author{Xiaohui Chen \\EID: xc2388}
+\title{M 362K Pre-Class Work for 2/5}
+
+\begin{document}
+\maketitle
+\begin{spacing}{2.0}
+
+\textbf{Question}: A group of students are volunteering either in a soup kitchen or a library. Among the students, $40\%$ are in middle school and $60\%$ are in high school. In a group of volunteers in the library, $20\%$ are middle school students. What is the probability that a selected volunteer is a middle school student given that the student is volunteering in a library?\\
+\\
+\\
+
+\textbf{Solution}:
+From the question we can know $Pr(middle)=0.4$, $Pr(high)=0.6$ and $Pr(library|middle)=0.2$
+
+$\therefore Pr(library|high)=1-Pr(library|middle)=1-0.2=0.8$
+
+Using Bayes' rule, we can get:
+
+$Pr(middle|library)=\frac{Pr(library|middle)*Pr(middle)}{ Pr(library|middle)*Pr(middle)+Pr(library|high)*Pr(high)}= \frac{0.2*0.4}{0.2*0.4+ 0.8*0.6}= \frac{1}{7} \approx 0.14$
+
+
+\end{spacing}
+\end{document}

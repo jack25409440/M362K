@@ -1,0 +1,335 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 10.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     11007,        325]
+NotebookOptionsPosition[     10027,        286]
+NotebookOutlinePosition[     10369,        301]
+CellTagsIndexPosition[     10326,        298]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[{
+ RowBox[{"Multinomial", "[", 
+  RowBox[{"3", ",", "1", ",", "0"}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"Multinomial", "[", 
+  RowBox[{"3", ",", "0", ",", "1"}], "]"}]}], "Input",
+ CellChangeTimes->{{3.631188312412613*^9, 3.631188338191409*^9}}],
+
+Cell[BoxData["4"], "Output",
+ CellChangeTimes->{3.631188339050758*^9}],
+
+Cell[BoxData["4"], "Output",
+ CellChangeTimes->{3.631188339050758*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"x", "^", "4"}], "-", 
+  RowBox[{
+   RowBox[{"Multinomial", "[", 
+    RowBox[{"3", ",", "1", ",", "0"}], "]"}], "2", "*", 
+   RowBox[{"x", "^", "3"}], "*", "y"}]}]], "Input",
+ CellChangeTimes->{{3.6311883463852177`*^9, 3.6311884257592096`*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  SuperscriptBox["x", "4"], "-", 
+  RowBox[{"8", " ", 
+   SuperscriptBox["x", "3"], " ", "y"}]}]], "Output",
+ CellChangeTimes->{3.6311884278060527`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"x", "^", "4"}], "-", 
+  RowBox[{
+   RowBox[{"Multinomial", "[", 
+    RowBox[{"3", ",", "1", ",", "0"}], "]"}], "*", "2", "*", 
+   RowBox[{"x", "^", "3"}], "*", "y"}], "+", 
+  RowBox[{
+   RowBox[{"Multinomial", "[", 
+    RowBox[{"3", ",", "0", ",", "1"}], "]"}], "*", "5", "*", 
+   RowBox[{"x", "^", "3"}], "*", "z"}], "+", " ", 
+  RowBox[{
+   RowBox[{"Multinomial", "[", 
+    RowBox[{"2", ",", "2", ",", "0"}], "]"}], "*", "4", "*", 
+   RowBox[{"x", "^", "2"}], "*", 
+   RowBox[{"y", "^", "2"}]}], "+", 
+  RowBox[{
+   RowBox[{"Multinomial", "[", 
+    RowBox[{"2", ",", "0", ",", "2"}], "]"}], "*", "25", "*", 
+   RowBox[{"x", "^", "2"}], "*", 
+   RowBox[{"z", "^", "2"}]}], "-", 
+  RowBox[{
+   RowBox[{"Multinomial", "[", 
+    RowBox[{"2", ",", "1", ",", "1"}], "]"}], "*", "10", "*", 
+   RowBox[{"x", "^", "2"}], "y", "*", "z"}], "-", 
+  RowBox[{
+   RowBox[{"Multinomial", "[", 
+    RowBox[{"1", ",", "3", ",", "0"}], "]"}], "*", "8", "*", "x", "*", 
+   RowBox[{"y", "^", "3"}]}], "+", 
+  RowBox[{
+   RowBox[{"Multinomial", "[", 
+    RowBox[{"1", ",", "0", ",", "3"}], "]"}], "*", "125", "*", "x", "*", 
+   RowBox[{"z", "^", "3"}]}], "+", 
+  RowBox[{
+   RowBox[{"Multinomial", "[", 
+    RowBox[{"1", ",", "2", ",", "1"}], "]"}], "*", "20", "*", "x", "*", 
+   RowBox[{"y", "^", "2"}], "*", "z"}], "-", 
+  RowBox[{
+   RowBox[{"Multinomial", "[", 
+    RowBox[{"1", ",", "1", ",", "2"}], "]"}], "*", "50", "*", "x", "*", "y", 
+   "*", 
+   RowBox[{"z", "^", "2"}]}], "+", 
+  RowBox[{
+   RowBox[{"Multinomial", "[", 
+    RowBox[{"0", ",", "4", ",", "0"}], "]"}], "*", "16", "*", 
+   RowBox[{"y", "^", "4"}]}], "+", 
+  RowBox[{
+   RowBox[{"Multinomial", "[", 
+    RowBox[{"0", ",", "0", ",", "4"}], "]"}], "*", "625", "*", 
+   RowBox[{"z", "^", "4"}]}], "-", 
+  RowBox[{
+   RowBox[{"Multinomial", "[", 
+    RowBox[{"0", ",", "3", ",", "1"}], "]"}], "*", "40", "*", 
+   RowBox[{"y", "^", "3"}], "*", "z"}], "-", 
+  RowBox[{
+   RowBox[{"Multinomial", "[", 
+    RowBox[{"0", ",", "1", ",", "3"}], "]"}], "*", "250", "*", "y", "*", 
+   RowBox[{"z", "^", "3"}]}], "+", 
+  RowBox[{
+   RowBox[{"Multinomial", "[", 
+    RowBox[{"0", ",", "2", ",", "2"}], "]"}], "*", "100", "*", 
+   RowBox[{"y", "^", "2"}], "*", 
+   RowBox[{"z", "^", "2"}]}]}]], "Input",
+ CellChangeTimes->{{3.631188452323353*^9, 3.63118856773165*^9}, {
+  3.631188734487458*^9, 3.6311889128344407`*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  SuperscriptBox["x", "4"], "-", 
+  RowBox[{"8", " ", 
+   SuperscriptBox["x", "3"], " ", "y"}], "+", 
+  RowBox[{"24", " ", 
+   SuperscriptBox["x", "2"], " ", 
+   SuperscriptBox["y", "2"]}], "-", 
+  RowBox[{"32", " ", "x", " ", 
+   SuperscriptBox["y", "3"]}], "+", 
+  RowBox[{"16", " ", 
+   SuperscriptBox["y", "4"]}], "+", 
+  RowBox[{"20", " ", 
+   SuperscriptBox["x", "3"], " ", "z"}], "-", 
+  RowBox[{"120", " ", 
+   SuperscriptBox["x", "2"], " ", "y", " ", "z"}], "+", 
+  RowBox[{"240", " ", "x", " ", 
+   SuperscriptBox["y", "2"], " ", "z"}], "-", 
+  RowBox[{"160", " ", 
+   SuperscriptBox["y", "3"], " ", "z"}], "+", 
+  RowBox[{"150", " ", 
+   SuperscriptBox["x", "2"], " ", 
+   SuperscriptBox["z", "2"]}], "-", 
+  RowBox[{"600", " ", "x", " ", "y", " ", 
+   SuperscriptBox["z", "2"]}], "+", 
+  RowBox[{"600", " ", 
+   SuperscriptBox["y", "2"], " ", 
+   SuperscriptBox["z", "2"]}], "+", 
+  RowBox[{"500", " ", "x", " ", 
+   SuperscriptBox["z", "3"]}], "-", 
+  RowBox[{"1000", " ", "y", " ", 
+   SuperscriptBox["z", "3"]}], "+", 
+  RowBox[{"625", " ", 
+   SuperscriptBox["z", "4"]}]}]], "Output",
+ CellChangeTimes->{3.631188915210017*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"TeXForm", "[", 
+  RowBox[{"Out", "[", "4", "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.6311889231919484`*^9, 3.6311889294322944`*^9}}],
+
+Cell["\<\
+x^4-8 x^3 y+20 x^3 z+24 x^2 y^2-120 x^2 y z+150 x^2 z^2-32 x y^3+240 x y^2 \
+z-600
+   x y z^2+500 x z^3+16 y^4-160 y^3 z+600 y^2 z^2-1000 y z^3+625 z^4\
+\>", "Output",
+ CellChangeTimes->{3.6311889305246134`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"ToExpression", "[", 
+  RowBox[{
+   RowBox[{"Out", "[", "4", "]"}], ",", "TeXForm"}], "]"}]], "Input",
+ CellChangeTimes->{{3.6311889967329407`*^9, 3.6311890636096725`*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"ToExpression", "::", "notstr"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"The format type \[NoBreak]\\!\\(TeXForm\\)\[NoBreak] is \
+valid only for string input. \\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", \
+ButtonStyle->\\\"Link\\\", ButtonFrame->None, \
+ButtonData:>\\\"paclet:ref/message/General/notstr\\\", ButtonNote -> \
+\\\"ToExpression::notstr\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{3.631189064151615*^9}],
+
+Cell[BoxData[
+ RowBox[{"ToExpression", "[", 
+  RowBox[{
+   RowBox[{
+    SuperscriptBox["x", "4"], "-", 
+    RowBox[{"8", " ", 
+     SuperscriptBox["x", "3"], " ", "y"}], "+", 
+    RowBox[{"24", " ", 
+     SuperscriptBox["x", "2"], " ", 
+     SuperscriptBox["y", "2"]}], "-", 
+    RowBox[{"32", " ", "x", " ", 
+     SuperscriptBox["y", "3"]}], "+", 
+    RowBox[{"16", " ", 
+     SuperscriptBox["y", "4"]}], "+", 
+    RowBox[{"20", " ", 
+     SuperscriptBox["x", "3"], " ", "z"}], "-", 
+    RowBox[{"120", " ", 
+     SuperscriptBox["x", "2"], " ", "y", " ", "z"}], "+", 
+    RowBox[{"240", " ", "x", " ", 
+     SuperscriptBox["y", "2"], " ", "z"}], "-", 
+    RowBox[{"160", " ", 
+     SuperscriptBox["y", "3"], " ", "z"}], "+", 
+    RowBox[{"150", " ", 
+     SuperscriptBox["x", "2"], " ", 
+     SuperscriptBox["z", "2"]}], "-", 
+    RowBox[{"600", " ", "x", " ", "y", " ", 
+     SuperscriptBox["z", "2"]}], "+", 
+    RowBox[{"600", " ", 
+     SuperscriptBox["y", "2"], " ", 
+     SuperscriptBox["z", "2"]}], "+", 
+    RowBox[{"500", " ", "x", " ", 
+     SuperscriptBox["z", "3"]}], "-", 
+    RowBox[{"1000", " ", "y", " ", 
+     SuperscriptBox["z", "3"]}], "+", 
+    RowBox[{"625", " ", 
+     SuperscriptBox["z", "4"]}]}], ",", "TeXForm"}], "]"}]], "Output",
+ CellChangeTimes->{3.631189064151615*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"ToExpression", "[", 
+  RowBox[{
+  "\"\<\!\(\*SuperscriptBox[\(x\), \(4\)]\)-8 \!\(\*SuperscriptBox[\(x\), \(3\
+\)]\) y+24 \!\(\*SuperscriptBox[\(x\), \(2\)]\) \!\(\*SuperscriptBox[\(y\), \
+\(2\)]\)-32 x \!\(\*SuperscriptBox[\(y\), \(3\)]\)+16 \
+\!\(\*SuperscriptBox[\(y\), \(4\)]\)+20 \!\(\*SuperscriptBox[\(x\), \(3\)]\) \
+z-120 \!\(\*SuperscriptBox[\(x\), \(2\)]\) y z+240 x \!\(\*SuperscriptBox[\(y\
+\), \(2\)]\) z-160 \!\(\*SuperscriptBox[\(y\), \(3\)]\) z+150 \
+\!\(\*SuperscriptBox[\(x\), \(2\)]\) \!\(\*SuperscriptBox[\(z\), \(2\)]\)-600 \
+x y \!\(\*SuperscriptBox[\(z\), \(2\)]\)+600 \!\(\*SuperscriptBox[\(y\), \
+\(2\)]\) \!\(\*SuperscriptBox[\(z\), \(2\)]\)+500 x \
+\!\(\*SuperscriptBox[\(z\), \(3\)]\)-1000 y \!\(\*SuperscriptBox[\(z\), \
+\(3\)]\)+625 \!\(\*SuperscriptBox[\(z\), \(4\)]\)\>\"", ",", " ", "TeXForm"}],
+   "]"}]], "Input",
+ CellChangeTimes->{{3.631189089465679*^9, 3.6311890989416704`*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"ToExpression", "::", "bkslsh"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"The string \
+\[NoBreak]\\!\\(\\\"\\\\!\\\\(\\\\*SuperscriptBox[\\\\(x\\\\), \\\\(4\\\\)]\\\
+\\)-8 \\\\!\\\\(\\\\*SuperscriptBox[\\\\(x\\\\), \\\\(3\\\\)]\\\\) y+24 \\\\!\
+\\\\(\\\\*SuperscriptBox[\\\\(x\\\\), \\\\(2\\\\)]\\\\) \
+\\\\!\\\\(\\\\*SuperscriptBox[\\\\(y\\\\), \\\\(2\\\\)]\\\\)-32 x \
+\\\\!\\\\(\\\\*SuperscriptBox[\\\\(y\\\\)\\\" \[Ellipsis] \
+\\\"ptBox[\\\\(y\\\\), \\\\(2\\\\)]\\\\) \\\\!\\\\(\\\\*SuperscriptBox[\\\\(z\
+\\\\), \\\\(2\\\\)]\\\\)+500 x \\\\!\\\\(\\\\*SuperscriptBox[\\\\(z\\\\), \
+\\\\(3\\\\)]\\\\)-1000 y \\\\!\\\\(\\\\*SuperscriptBox[\\\\(z\\\\), \
+\\\\(3\\\\)]\\\\)+625 \\\\!\\\\(\\\\*SuperscriptBox[\\\\(z\\\\), \\\\(4\\\\)]\
+\\\\)\\\"\\)\[NoBreak] contains single backslashes. Backslash characters \
+inside strings are represented by \\\\\\\\. \\!\\(\\*ButtonBox[\\\"\
+\[RightSkeleton]\\\", ButtonStyle->\\\"Link\\\", ButtonFrame->None, \
+ButtonData:>\\\"paclet:ref/ToExpression\\\", ButtonNote -> \
+\\\"ToExpression::bkslsh\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{3.631189099453234*^9}],
+
+Cell[BoxData[
+ RowBox[{"x", "+", 
+  RowBox[{"16", " ", "y"}], "-", 
+  RowBox[{"16", " ", "x", " ", "y"}], "+", 
+  RowBox[{"625", " ", "z"}], "+", 
+  RowBox[{"670", " ", "x", " ", "z"}], "-", 
+  RowBox[{"560", " ", "y", " ", "z"}], "-", 
+  RowBox[{"480", " ", "x", " ", "y", " ", "z"}]}]], "Output",
+ CellChangeTimes->{3.6311890996407537`*^9}]
+}, Open  ]]
+},
+WindowSize->{767, 733},
+WindowMargins->{{Automatic, 154}, {14, Automatic}},
+FrontEndVersion->"10.0 for Microsoft Windows (64-bit) (July 1, 2014)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 263, 5, 52, "Input"],
+Cell[846, 29, 70, 1, 31, "Output"],
+Cell[919, 32, 70, 1, 31, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1026, 38, 278, 7, 31, "Input"],
+Cell[1307, 47, 176, 5, 31, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1520, 57, 2392, 64, 152, "Input"],
+Cell[3915, 123, 1166, 34, 52, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[5118, 162, 160, 3, 31, "Input"],
+Cell[5281, 167, 221, 5, 62, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[5539, 177, 195, 4, 31, "Input"],
+Cell[5737, 183, 482, 10, 21, "Message"],
+Cell[6222, 195, 1299, 36, 55, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[7558, 236, 940, 15, 76, "Input"],
+Cell[8501, 253, 1165, 20, 92, "Message"],
+Cell[9669, 275, 342, 8, 31, "Output"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
+

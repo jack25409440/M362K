@@ -1,0 +1,362 @@
+\documentclass[12pt]{article}
+
+\usepackage{graphicx}
+\usepackage[margin=1.0in]{geometry}
+\usepackage{amsmath}
+\usepackage{cases}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{grffile}
+\usepackage{setspace}
+
+\setlength\parindent{0pt}
+\newcommand{\tabincell}[2]{\begin{tabular}{@{}#1@{}}#2\end{tabular}}
+\DeclareMathOperator*{\CP}{\cup}
+
+
+\author{Xiaohui Chen}
+\title{M 362K Midterm Note}
+
+
+\begin{document}
+\maketitle
+\begin{spacing}{2.0}
+
+\section{Combinatorial Probability}
+
+\textbf{The multiplication principle}: Suppose an experiment can be broken down into a first stage A consisting of $N(A)$ outcomes and that for each of these outcomes. Then the total number of outcomes for the two states combined is equal to $N(A) \times N(B)$
+
+\textbf{Permutations}: Given a set of n distinguishable object, an ordered selection of r different elements of the set is called a permutation of n objects chosen r at a time
+
+\textbf{Factorials}: Let n be a whole number. The $n!$ is defined by $n!=n \cdot (n-1) \cdot (n-2) \cdots 3 \cdot 2 \cdot 1$. By convention, we define $0!=1$
+
+${}_{n}P_{r}= n(n-1)(n-2) \cdots (n-r+1)= \frac{n!}{(n-r)!}$
+
+\textbf{Combinations}: Given a set of n distinguishable objects, an ordered selection of r different elements of the set is called a combination of n objects chosen r at a time and is denoted by ${}_{n}C_{r}$ and read as $n$ choose $r$
+
+${}_{n}C_{r} = \frac{{}_{n}P_{r}}{r!}= \frac{n!}{r!(n-r)!}$. The form ${}_{n}C_{r}= \left( \begin{array}{c}
+n \\
+r
+\end{array}
+\right)$ is especially common and is referred as the binomial coefficient
+
+\textbf{Partitions}: Let A be a set of n distinguishable objects. Let whole numbers $\{ r_1, r_2, \cdots, r_k \}$ be given such that $r_1+r_2 + \cdots r_k=n$. A partition of A into subsets of sizes $\{ r_1, r_2, \cdots, r_k \}$ is a particular distribution of the n objects into disjoint subsets $A_1,A_2,\cdots, A_k$ of sizes $r_1, r_2, \cdots, r_k$ respectively
+
+\textbf{Multinomial Coefficients}: The number of partitions of n distinct objects into k subsets of sizes $r_1, r_2, \cdots, r_k$, where $r_1+r_2 + \cdots r_k=n$ is called multinomial coefficient, denoted by $\left(
+\begin{array}{ccc}
+& n & \\
+r_1 & \cdots & r_k
+\end{array}
+\right)= \frac{n!}{r_1!r_2! \cdots r_k!}$
+
+The number of unordered samples of r objects, with replacement, from n distinguishable objects is ${}_{n+r-1}C_{r}= \left(
+\begin{array}{c}
+n+r-1 \\
+r
+\end{array}
+\right)
+=\left(
+\begin{array}{c}
+n+r-1 \\
+n-1
+\end{array}
+\right)$. This is equivalent to the number of ways to distribute r indistinguishable balls into n distinguishable urns without exclusion
+
+\begin{tabular}{|c|c|c|c|}
+  \hline
+  % after \\: \hline or \cline{col1-col2} \cline{col3-col4} ...
+  \tabincell{c}{Samples of size r \\ from n\\ distinguishable objects}
+   & Without replacement & With replacement &  \\
+  \hline
+  Order matter & ${}_{n}P_{r}$ & $n^r$ &\tabincell{c}{ Distinguishable balls} \\
+  \hline
+  Order doesn't matter &
+  $\left(
+  \begin{array}{c}
+  n\\
+  r
+  \end{array}
+  \right)$ &
+  $\left(
+  \begin{array}{c}
+  n+r-1\\
+  r
+  \end{array}
+  \right)$ & Indistinguishable balls \\
+  \hline
+    & Exclusive & Non-exclusive & \tabincell{c}{Distributions of r\\ balls into n\\ distinguishable urns} \\
+  \hline
+\end{tabular}
+
+\textbf{The Binomial Theorem}: For every non-negative integer n and real numbers x and y, we have $(x+y)^n = \sum\limits_{r=0}^{n} {}_{n}C_{r} \cdot x^r \cdot y^{n-r} = \sum\limits_{r=0}^{n} {}_{n}C_{r} \cdot x^{n-r} \cdot y^{r}$
+
+\textbf{The Multinomial Theorem}: $(x_1 + x_2 + \cdots + x_r)^n = \sum\limits_{n_1+\cdots+ n_r= n} \left(
+\begin{array}{ccc}
+ & n & \\
+n_1, & \cdots, & n_r
+\end{array}
+\right) \cdot x_1^{n_1}\cdot x_2^{n_2}\cdots x_r^{n_r}$
+
+The odds against the event A are quoted as ratio $Pr(A\ does\ not\ occur):Pr(A\ does\ occur)= Pr(A^C):Pr(A)= (1-p): p$
+
+If the odds against the event A are quoted as $b:a$, then $Pr(A)=\frac{a}{a+b}$
+
+\section{General Rules of Probability}
+
+The \textbf{sample space} is the set (collection) of all possible outcomes of a probability experiment. An \textbf{event} is a subset of the sample space
+
+\subsection{Axioms of Probability Theory}
+
+(1) $0 \le Pr(E) \le 1$ for any event E
+
+(2) $Pr(U)=1$, where U denotes the entire sample space
+
+(3) The probability of the union of mutually exclusive events is the sum of the individual probabilities of the disjoint sets: $Pr\left( \CP\limits_{mutually\ exclusive} \right)= \sum\limits_i Pr(E_i)$
+
+\subsection{Two Important Probability Rules}
+
+(1) \textbf{Negation Rule}: $Pr(E')=1-Pr(E)$
+
+(2) \textbf{Inclusion-Exclusion Rule}: $Pr(E)+Pr(F) = Pr(E \cup F)+ Pr(E \cap F)$
+
+\subsection{De Morgan's Laws}
+
+For any two sets A and B
+
+(1) $(A\cap B)'= A' \cup B'$
+
+(2) $(A \cup B)' = A' \cap B'$
+
+\subsection{The Venn Box Diagram}
+
+\begin{tabular}{|c|c|c|c|}
+  \hline
+  % after \\: \hline or \cline{col1-col2} \cline{col3-col4} ...
+    & A & A' &  \\
+  \hline
+  B & $Pr(A\cap B)$ & $Pr(A' \cap B)$ & $Pr(B)$ \\
+  \hline
+  B' & $Pr(A\cap B')$ & $Pr(A'\cap B')$ & $Pr(B')$ \\
+  \hline
+    & $Pr(A)$ & $Pr(A')$ & 1 \\
+  \hline
+\end{tabular}
+
+\subsection{Conditional Probability}
+
+The conditional probability that event A occurs given that event B occurred is $$Pr(A|B)= \frac{Pr(A \cap B)}{Pr(B)}$$
+
+If the sample space consists of equally likely outcomes, then $$Pr(A|B)= \frac{N(A \cap B)}{N(B)}$$
+
+\textbf{Independence}: Let A and B be events with non-zero probabilities. We say A and B are independent if any (and hence all) of the following hold:
+
+(1) $Pr(A|B)=Pr(A)$
+
+(2) $Pr(B|A)= Pr(B)$ or
+
+(3) $Pr(A\cap B)= Pr(A) \cdot Pr(B)$. This is called the \textbf{multiplicative rule}
+
+Otherwise the events are said to be \textbf{dependent}
+
+\subsection{Bayes' Theorem}
+
+Suppose that the sample space S is partitioned into disjoint subsets $B_1, B_2, \cdots , B_n$, That is, $S=B_1 \cup B_2 \cup \cdots \cup B_n$, $Pr(B_i) >0$ for all $i=1,2,\ldots,n$, and $B_i \cap B_j = \varnothing$ for all $i \ne j$. Then for an event A, $$Pr(B_j|A) = \frac{Pr(B_j)\cdot Pr(A|B_j)}{\sum\limits_{i=1}^{n} Pr(B_i) \cdot Pr(A|B_i)}$$
+
+\section{Discrete Random Variables}
+
+\subsection{Discrete Random Variable}
+
+\textbf{Discrete Random Variable}: We say X is a \textbf{discrete random variable} if X is a numerically valued function whose domain is the sample space of a probability experiment with a finite or countably infinite number of outcomes
+
+Every random variable has a \textbf{probability distribution} associated with it
+
+The tabulation of the probabilities for each possible value x of a discrete random variable X is called its \textbf{probability distribution}. The probabilities must be positive and sum to one
+
+The function $p(x_i)= Pr(X=x_i)$ on the values of the random variable X is called the \textbf{probability function} of X
+
+\subsection{Cumulative Probability Distribution}
+
+Let X be a discrete random variable. For each real number x, let $F(x)= Pr(X \le x)$. The function $F(x)$ is called the \textbf{cumulative distribution function} (CDF) for the random variable X and satisfies
+
+(1) $0 \le F(x) = Pr(X \le x)$ for all X
+
+(2) If $x_{i-1} < x_i$ are consecutive values in the probability distribution table of X, then $Pr(X=x_i)= F(x_i)-F(x_{i-1}) = Pr(X \le x_i) - Pr(X \le x_{i-1}) = p(x_i)$
+
+(3) We define $F(\infty)= Pr(X< \infty) =1$
+
+If X is a discrete random variable with probability function $Pr(X=x_i)=p(x_i)$, then the \textbf{expected value (mean)} of the random variable X is given by $\mu_X = E[X] = \sum\limits_{i} x_i \cdot p(x_i)$
+
+If X is a discrete random variable with probability function $Pr(X=x_i)=p(x_i)$, and $Y=g(X)$ is a transformation of X, then $\mu_Y= E[Y]= E[g(X)]= \sum\limits_{i} g(x_i) \cdot p(x_i)$
+
+\subsection{Median}
+
+If $x_1,x_2, \cdots, x_n$ is a collection of n data points listed from smallest to largest, then the \textbf{median} of the data equals
+
+(a) $x_{\frac{n+1}{2}}$ if n is odd. This is just the middle term in the sequence
+
+(b) $\frac{x_{\frac{n}{2}}+x_{\frac{n}{2}+1}}{2}$ if n is even. This is the mean of the two middle terms
+
+\subsection{Midrange}
+
+If $\{ x_1,x_2, \cdots, x_n \}$ is a collection of n data points listed from smallest to largest, then the \textbf{midrange} od the data is defined to be $$\frac{x_1+x_n}{2}= \frac{minimum+maximum}{2}$$
+
+\subsection{Mode}
+
+If $x_1,x_2, \ldots, x_n$ is a collection of n data points, then the \textbf{mode} of the data is defined as,
+
+(a) The value $x_i$ that occurs most frequently
+
+(b) The two values $x_i$ and $x_j$ of they occur the same number of times, and more frequently than the remaining points. In this case we say the data is \textbf{bi-modal}
+
+(c) Otherwise, the mode does not exist
+
+\subsection{Percentiles}
+
+If $x_1,x_2, \ldots, x_n$ are n data points arranged in ascending order, then $x_i$ corresponds to the $$\left( 100\cdot \frac{i}{n+1} \right)^{th} percentile$$
+
+\subsection{Quartiles}
+
+The \textbf{first quartile} corresponds to the $25^{th}$ percentile and is denoted: $Q_1$
+
+The \textbf{second quartile} corresponds to the $50^{th}$ percentile and is denoted: $Q_2$
+
+The \textbf{third quartile} corresponds to the $75^{th}$ percentile and is denoted: $Q_3$
+
+The \textbf{inter-quartile range(IQR)} is $IQR=Q_3- Q_1$, where $Q_3$ is the third quartile and $Q_1$ is the first quartile
+
+\subsection{Variance}
+
+$Var[X]= \sigma_X^2 = \sum\limits_{x_i} (x_i- \mu_X)^2 \cdot p(x_i)= E[X^2]- E[X]^2= \sum\limits_{x_i} x_i^2p(x_i)- \left( \sum\limits_{x_i} x_i p(x_i) \right)^2= \sum\limits_{x_i} x_i^2p(x_i) - \left( \mu_X \right)^2$
+
+Let X be a discrete random variable and let $Y=a\cdot X+b$, where a and b are real numbers. Then,
+
+(1) $E[X]= E[a\cdot X+b] = a\cdot E[X] +b$
+
+(2) $Var[Y]= Var[a\cdot X+b]= a^2 \cdot Var[X]$
+
+Standard deviation $\sigma_X= \sqrt{Var[X]}$
+
+\subsection{Standardized Random Variable}
+
+Let X be a discrete random variable and let $Z= \frac{X-\mu}{\sigma}$. Then $Z$ is called the \textbf{standardization of X}. The random variable $Z$ always has mean equal to 0 and standard deviation equal to 1
+
+z-score: $z=\frac{X-\mu}{\sigma}$
+
+Markov Inequality: $Pr[Y>a] \le \frac{\mu_Y}{a}$ for any $a>0$
+
+Chebychev's Theorem:
+
+$Pr(X< \mu_X - k\cdot \sigma_X\ or\ X>\mu_X + k\cdot \sigma_X)= Pr(|X-\mu|>k \cdot \sigma_X) \le \frac{1}{k^2}$
+
+$Pr(\mu_X - k \cdot \sigma_X \le X \ge \mu_X + k \cdot \sigma_X) \ge 1-\frac{1}{k^2}$
+
+Outliers: We define an outlier to be any data ppint with a z-score less than $z=-3$ or greater than $z=3$
+
+Coefficient of Variation: $\frac{100 \cdot \sigma}{\mu} \%$
+
+\subsection{Joint Distributed Random Variables}
+
+Let X and Y be random variables arising from the same discrete probability experiment. The \textbf{joint distribution} of X and Y is given by $p(x,y)= Pr[\{ X=x \} \cap \{ Y=y \}]$
+
+We say X and Y are \textbf{independent} if dor all x and y the events $\{ X=x \}$ and $\{ Y=y \}$ are independent. That is, $p(x,y)= Pr[\{ X=x \} \cap \{ Y=y \}]= Pr[X=x] \cdot Pr[Y=y]= p_x(x) \cdot p_Y (y)$
+
+Let X and Y be random variables arising from the same probability experiment. Then,
+
+(a) $E[X+Y]= E[X]+ E[Y]$. This formula extends to sums of any length
+
+Further, if X and Y are \textbf{independent}, then
+
+(b) $E[X \cdot Y]= E[X] \cdot E[Y]$, and
+
+(c) $Var[X+Y]= Var[X] + Var[Y]$
+
+This formula extends to sums of any length provided the summands are pair-wise independent
+
+\section{Some Discrete Distributions}
+
+\subsection{Discrete Uniform Distribution}
+
+\textbf{arithmetic series}: $\sum\limits_{i=1}^{n} i = \frac{n(n+1)}{2}$
+
+\textbf{sums of squares}: $\sum\limits_{i=1}^{n} i^2 = \frac{n(n+1)(2n+1)}{6}$
+
+\textbf{finite geometric series}: $\sum\limits_{n=0}^{N} ax^n = \frac{a(1-x^{N+1})}{1-x}$, for any $x\ne 1$
+
+\textbf{infinite geometric series}: $\sum\limits_{n=0}^{N} ax^n = \frac{a}{1-x}$, for any $|x| < 1$
+
+% Textbook page 133
+
+A random variable X is said to have a \textbf{discrete uniform distribution} if its probability function is $Pr(X=x)= p(x) = \frac{1}{n}$ for $x=1,2,\ldots,n$
+
+$E[X]=\frac{n+1}{2}$
+
+$Var[X]=\frac{n^2-1}{12}$
+
+\subsection{Bernoulli Trials}
+
+Suppose that the random variable X has property function given by $Pr[X=1]=p$ and $Pr[X=0]=q=1-p$. Then X is called a \textbf{Bernoulli random variable} with probability of success P
+
+$E[X]=p$ and $Var[X]=pq=p(1-p)$
+
+\subsection{Binomial Distribution}
+
+Suppose that the random variable Y has probability function given by $Pr(Y=y)= p(y)= {}_{n}C_{y}p^y q^{n-y}$ for $y=0,1,2,\ldots,n$ and $0 \le p \le 1$. Then the random variable Y is called a \textbf{binomial random variable} with \textbf{parameters} n and p
+
+Properties:
+
+(a) There are n identical trials
+
+(b) For each (Bernoulli) trial, there are two outcomes called success and failure
+
+(c) The probability of success is $p$ and the probability of failure is $q=1-p$
+
+(d) Each trial is independent of the other trials
+
+$\mu_Y= E[Y]= np$
+
+$\sigma^2_Y = Var[Y]= npq=np(1-p)$
+
+\subsection{Geometric Distribution}
+
+Suppose that the random variable X has probability function given by $Pr(X=k)= p(1-p)^k= pq^k$ for $k=0,1,2\cdots$, $q=1-p$ and $0<p<1$. Then X is called the \textbf{geometric random variable with parameter} p
+
+$E[X]= \frac{q}{p} = \frac{1-p}{p}$
+
+$Var[X]= \frac{q}{p^2}= \frac{1-p}{p^2}$
+
+\subsection{Negative Binomial Distribution}
+
+Requirements:
+
+(a) The trials are identical
+
+(b) Each trial is independent of te other trials
+
+(c) The random variable M denotes the number of failures prior to the $r^{th}$ sucess
+
+(d) The probability of success is p and the probability of failure is $q=1-p$
+
+$p_k=Pr(M=k)= {}_{r+k-1}C_{k} p^r q^k = {}_{r+k-1}C_{r-1} p^r (1-p)^k$
+
+$E[M]= \frac{rq}{p}$
+
+$Var[M]= \frac{rq}{p^2}$
+
+\subsection{Hyper-geometric Random Variable}
+
+$Pr(X=k)= p_k= \frac{{}_{G}C_{k} \cdot {}_{B}C_{n-k}}{{}_{B+G}C_{n}}$
+
+$\mu_X= E[X]= n\left( \frac{G}{B+G} \right)$
+
+$\sigma_X^2 = Var[X] = n\left( \frac{G}{B+G} \right) \left( \frac{B}{B+G} \right) \left( \frac{B+G-n}{B+G-1} \right)$
+
+\subsection{Poisson Distribution}
+
+Suppose that the random variable Z has probability function given by $Pr(Z=k)= e^{-\lambda} \frac{\lambda^k}{k!}$ for $k=0,1,2,\ldots$ and $\lambda>0$. Then Z is called a \textbf{Poison random variable with parameter} $\lambda$
+
+$E[Z]= \lambda$ and $Var[Z]=\lambda$
+
+Suppose that $Z_i$ are independent \textbf{Poisson random variables with mean} $\lambda_i$ for $i=1,2$. Then $Z=Z_1+Z_2$ is a Poisson random variable with mean (parameter) $E[Z]= \lambda_1+\lambda_2$
+
+\end{spacing}
+\end{document} 

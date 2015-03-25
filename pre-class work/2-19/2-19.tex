@@ -1,0 +1,91 @@
+\documentclass[12pt]{article}
+
+\usepackage{graphicx}
+\usepackage[margin=1.0in]{geometry}
+\usepackage{amsmath}
+\usepackage{cases}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{grffile}
+\usepackage{setspace}
+
+\setlength\parindent{0pt}
+
+\author{Xiaohui Chen \\EID: xc2388}
+\title{M 362K Pre-Class Work for 2/19}
+
+\begin{document}
+\maketitle
+\begin{spacing}{2.0}
+
+\section*{3-38}
+
+Let S be the random variable that denotes the sum of a pair of fair dice
+
+The probability distribution is shown below
+
+\begin{tabular}{|c|c|c|c|c|c|c|}
+  \hline
+  % after \\: \hline or \cline{col1-col2} \cline{col3-col4} ...
+  S & 5 & 6 & 7 & 8 & 9 & 10 \\
+  \hline
+  $Pr(S|at\ least\ one\ 4)$ & $\frac{2}{11}$ & $\frac{2}{11}$ & $\frac{2}{11}$ & $\frac{1}{11}$ & $\frac{2}{11}$ & $\frac{2}{11}$ \\
+  \hline
+\end{tabular}
+
+$E[S|at\ least\ one\ 4]= 5*\frac{2}{11} + 6*\frac{2}{11} + 7*\frac{2}{11}+ 8*\frac{1}{11}+ 9*\frac{2}{11} + 10*\frac{2}{11} = \frac{82}{11} \approx 7.45$
+
+\section*{3-42}
+
+\subsection*{(a)}
+
+X and Y are independent. This is because the outcome of the first dice does not affect the outcome of the second dice at all
+
+\subsection*{(b)}
+
+$E[X]=E[y]=\frac{1+2+3+4+5+6}{6}=3.5$
+
+$E[X^2]= E[Y^2]= \frac{1^2+2^2+3^2+4^2+5^2+6^2}{6}= \frac{91}{6}$
+
+$Var[X]=Var[Y]= E[X^2]- E[X]^2= 2.91667$
+
+$Var[X+Y]= Var[X]+Var[Y]= 5.833$
+
+\section*{3-45}
+
+\subsection*{(a)}
+
+From the table given in the question, we can know
+
+$Pr(H=73 \cap S=12)= 1-(0.25+0.2+0.15+0.05+0.12)= 0.23$
+
+$E[S]= 68*(0.25+0.05)+70*(0.2+0.12)+ 73*(0.15*0.23)= 45.3185$
+
+$E[H]= 8.5*(0.25+0.2+0.15)+ 12*(0.05+0.12+0.23)= 9.9$
+
+\subsection*{(b)}
+
+$Pr(S=8.5|H=73)= \frac{0.15}{0.15+0.23} = 0.394837$
+
+$Pr(S=12|H=73)= 1- Pr(S=8.5|H=73) = 0.605263$
+
+$E[S|H=73]= 8.5*0.394837 + 12*0.605263= 10.6193$
+
+\subsection*{(c)}
+Let $\mu$ denotes mean and $\sigma$ denotes the standard deviation, COV denotes coefficient of variation
+
+$Pr(S=8.5|H=68)= \frac{0.25}{0.25+0.05}= 0.8333$
+
+$Pr(S=12|H=68)= 1- Pr(S=8.5|H=68)= 0.1667$
+
+$\mu=E[S|H=68]= 8.5*0.8333+12*0.1667 = 9.08345$
+
+$E[S^2|H=68]= 8.5^2*0.8333+12^2*0.1667=84.2107$
+
+$\sigma=\sqrt{E[S^2|H=68]- \mu^2}= 1.30448$
+
+$COV=100*\frac{\sigma}{\mu} \%=  14.361 \%$
+
+
+\end{spacing}
+\end{document}

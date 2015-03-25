@@ -1,0 +1,137 @@
+\documentclass[12pt]{article}
+
+\usepackage{graphicx}
+\usepackage[margin=1.0in]{geometry}
+\usepackage{amsmath}
+\usepackage{cases}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{grffile}
+\usepackage{setspace}
+
+\setlength\parindent{0pt}
+
+\author{Xiaohui Chen \\EID: xc2388}
+\title{M 362K Post-Class Homework 2}
+
+\begin{document}
+\maketitle
+\begin{spacing}{2.0}
+
+\section*{1-48}
+This question can be considered as distributing 10 balls into 5 urns where the urns are non-exclusive and the balls are not distinguishable. Therefore the total number of ways is ${}_{10+5-1}C_{4}=1001$
+
+\section*{1-51}
+We have to consider this question in several cases:
+
+Case 1:
+
+When no chicken sandwiches are ordered, the order is indeed select 5 products out of the 5 categories. Since we can order the same product more than once, the total number of ways to order in this case is $5^5=3125$
+
+Case 2:
+
+When 1 chicken sandwich is ordered, we have \$3 left. Similarly, the total number of ways to order is $5^3=125$
+
+Case 3:
+
+When 2 chicken sandwiches are ordered, we have only \$1 left. Therefore the total number of ways is $5^1=5$
+
+\section*{1-53}
+\subsection*{(c)}
+$(4x-5y)^3 = {}_{3}C_{0} (4x)^3 + {}_{3}C_{1} (4x)^2(-5y) + {}_{3}C_{2} (4x)(-5y)^2 + {}_{3}C_{3} (-5y)^3 = 64x^3 - 240x^2y + 300xy^2 - 125y^3$
+
+\section*{Sample Exam 9}
+For the white balls, we have to select 5 and 1 for power ball. Therefore the total number of ways is ${}_{49}C_{5}*{}_{42}C_{1}=80089128$
+
+\section*{Sample Exam 11}
+Using the multinomial theorem, we can expand $(x-2y+5z)^4$ as follows:
+
+$(x-2y+5z)^4 = \left(
+\begin{array}{ccc}
+  & 4 & \\
+4 & 0 & 0
+\end{array}
+\right) x^4 - \left(
+\begin{array}{ccc}
+  & 4 & \\
+3 & 1 & 0
+\end{array}
+\right) 2x^3y + \left(
+\begin{array}{ccc}
+  & 4 & \\
+3 & 0 & 1
+\end{array}
+\right) 5x^3z + \left(
+\begin{array}{ccc}
+  & 4 & \\
+2 & 2 & 0
+\end{array}
+\right) 4x^2y^2 + \left(
+\begin{array}{ccc}
+  & 4 & \\
+2 & 0 & 2
+\end{array}
+\right) 25x^2z^2 - \left(
+\begin{array}{ccc}
+  & 4 & \\
+2 & 1 & 1
+\end{array}
+\right) 10x^2yz - \left(
+\begin{array}{ccc}
+  & 4 & \\
+1 & 3 & 0
+\end{array}
+\right) 8xy^3 + \left(
+\begin{array}{ccc}
+  & 4 & \\
+1 & 0 & 3
+\end{array}
+\right)125xz^3 + \left(
+\begin{array}{ccc}
+  & 4 & \\
+1 & 2 & 1
+\end{array}
+\right) 20xy^2z - \left(
+\begin{array}{ccc}
+  & 4 & \\
+1 & 1 & 2
+\end{array}
+\right) 50xyz^2 + \left(
+\begin{array}{ccc}
+  & 4 & \\
+0 & 4 & 0
+\end{array}
+\right)16y^4 + \left(
+\begin{array}{ccc}
+  & 4 & \\
+0 & 0 & 4
+\end{array}
+\right) 625z^4 - \left(
+\begin{array}{ccc}
+  & 4 & \\
+0 & 3 & 1
+\end{array}
+\right) 40y^3z - \left(
+\begin{array}{ccc}
+  & 4 & \\
+0 & 1 & 3
+\end{array}
+\right) 250yz^3 + \left(
+\begin{array}{ccc}
+  & 4 & \\
+0 & 2 & 2
+\end{array}
+\right)100y^2z^2 = x^4-8 x^3 y+20 x^3 z+24 x^2 y^2-120 x^2 y z+150 x^2 z^2-32 x y^3+240 x y^2 z-600
+   x y z^2+500 x z^3+16 y^4-160 y^3 z+600 y^2 z^2-1000 y z^3+625 z^4$
+
+\section*{Sample Exam 12}
+The sample space contains ${}_{52}C_{3}$ possibilities since we choose 3 cards from the 52 cards
+
+However, if we have to make all three cards have faces. We have to choose 3 cards among 12 cards
+
+Let $Pr(faces)$ be the probability that all three cards have faces
+
+$$Pr(faces)= \frac{{}_{12}C_{3}}{{}_{52}C_{3}} = \frac{11}{1105}$$
+
+\end{spacing}
+\end{document}

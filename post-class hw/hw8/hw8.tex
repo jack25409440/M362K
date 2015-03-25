@@ -1,0 +1,124 @@
+\documentclass[12pt]{article}
+
+\usepackage{graphicx}
+\usepackage[margin=1.0in]{geometry}
+\usepackage{amsmath}
+\usepackage{cases}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{grffile}
+\usepackage{setspace}
+
+\setlength\parindent{0pt}
+
+\author{Xiaohui Chen \\EID: xc2388}
+\title{M 362K Post-Class Homework 8}
+
+
+\begin{document}
+\maketitle
+\begin{spacing}{2.0}
+
+\section*{3-22}
+
+\subsection*{(a)}
+
+$mean=\frac{1}{7}*(1.53+1.54+1.62+1.62+1.68+1.81+1.83)= 1.66143 m$
+
+$median= 1.62m$
+
+$mode= 1.62m$
+
+$midrange= \frac{1.53+1.83}{2}=1.68 m$
+
+\subsection*{(b)}
+
+$min=1.53 m$
+
+$max=1.83 m$
+
+\subsection*{(c)}
+
+Let i,j,k be the rank of $Q_1$, $Q_2$ and $Q_3$ respectively
+
+Then $i=0.25*(7+1)= 2$, $j=0.5*8=4$ and $k=0.75*8= 6$
+
+Therefore $Q_1=1.54$, $Q_2=1.62$ and $Q_3=1.81$
+
+\subsection*{(d)}
+
+Let i be the rank of the 40th percentile number
+
+$\therefore i=0.4*8=3.2$
+
+$40^{th}= 1.62$
+
+\subsection*{(e)}
+
+$range=1.83-1.53=0.3$
+
+$inter-quartile= Q_3-Q_1=1.81-1.54= 0.27$
+
+\section*{3-27}
+
+\subsection*{(a)}
+
+The probability distribution is shown below:
+
+\begin{tabular}{|c|c|c|c|c|c|c|c|}
+  \hline
+  % after \\: \hline or \cline{col1-col2} \cline{col3-col4} ...
+  x & 17 & 18 & 19 & 20 & 21 & 22 & 23 \\
+  \hline
+  Pr(x) & 0 & 0.18 & 0.29 & 0.38 & 0.09 & 0.05 & 0.01 \\
+  \hline
+\end{tabular}
+
+$E[X]= 17*0 +18*0.18 + 19*0.29 +20*0.38 +21*0.09 +22*0.05 +23*0.01 = 19.57$
+
+\subsection*{(b)}
+
+$E[X^2] = 17^2*0 +18^2*0.18 + 19^2*0.29 +20^2*0.38 +21^2*0.09 +22^2*0.05 +23^2*0.01= 384.19$
+
+$Var[x]=E[X^2]- E[X]^2= 384.19-19.57^2 = 1.2051$
+
+\section*{3-31}
+
+\subsection*{(a)}
+
+$z=\frac{125-100}{16}= 1.5625$
+
+\subsection*{(b)}
+
+Let Q denote the IQ number
+
+Then $Q= -1.75*16 +100= 72$
+
+\section*{3-35}
+
+Let S denote the random variable that represents the sum of a pair of fair dice
+
+The probability distribution is shown below:
+
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|}
+  \hline
+  % after \\: \hline or \cline{col1-col2} \cline{col3-col4} ...
+  $s$ & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 & 11 & 12 \\
+  \hline
+  $Pr(S=s)$ & $\frac{1}{36}$ & $\frac{2}{36}$ & $\frac{3}{36}$ & $\frac{4}{36}$ & $\frac{5}{36}$ & $\frac{6}{36}$ & $\frac{5}{36}$ & $\frac{4}{36}$ & $\frac{3}{36}$ & $\frac{2}{36}$ & $\frac{1}{36}$ \\
+  \hline
+\end{tabular}
+
+Let $\mu$ denotes mean and $\sigma$ denotes the standard deviation, COV denotes coefficient of variation
+
+$\mu= E[X]= 2*\frac{1}{36} + 3*\frac{2}{36} + 4*\frac{3}{36} + 5*\frac{4}{36} +6*\frac{5}{36} + 7*\frac{6}{36}+ 8*\frac{5}{36}+ 9*\frac{4}{36}+ 10*\frac{3}{36} +11*\frac{2}{36} +12*\frac{1}{36} = 7$
+
+$E[S^2]= 2^2*\frac{1}{36} + 3^2*\frac{2}{36} + 4^2*\frac{3}{36} + 5^2*\frac{4}{36} +6^2*\frac{5}{36} + 7^2*\frac{6}{36}+ 8^2*\frac{5}{36}+ 9^2*\frac{4}{36}+ 10^2*\frac{3}{36} +11^2*\frac{2}{36} +12^2*\frac{1}{36} = \frac{329}{6}$
+
+$\sigma= \sqrt{E[S^2]- \mu^2}= \sqrt{\frac{35}{6}}$
+
+$COV=100*\frac{\sigma}{\mu} \%=  34.5033 \%$
+
+
+\end{spacing}
+\end{document} 

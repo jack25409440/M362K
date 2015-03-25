@@ -1,0 +1,74 @@
+\documentclass[12pt]{article}
+
+\usepackage{graphicx}
+\usepackage[margin=1.0in]{geometry}
+\usepackage{amsmath}
+\usepackage{cases}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{grffile}
+\usepackage{setspace}
+
+\setlength\parindent{0pt}
+
+\author{Xiaohui Chen \\EID: xc2388}
+\title{M 362K Pre-Class Work for 2/17}
+
+\begin{document}
+\maketitle
+\begin{spacing}{2.0}
+
+\section*{3-26}
+From the probability distribution given in the question, we can get $Pr(X=45)=1-0.16-0.04-0.1-0.28=0.42$
+
+$\mu_X= 32*0.16+ 39*0.04 +45*0.42+ 57*0.1 + 62*0.28= 48.64$
+
+$Var[X]= 32^2*0.16+ 39^2*0.04 +45^2*0.42+ 57^2*0.1 + 62^2*0.28- 48.64^2= 110.5504$
+
+\section*{3-28}
+
+\subsection*{(a)}
+$mean=\frac{1}{12}*(78+48+69+102+78+93+69+84+96+59+87+93)= \frac{239}{3} \approx 79.67$
+
+$median= 81$
+
+There is no mode
+
+$midrange=\frac{48+102}{2}=75$
+
+\subsection*{(b)}
+$min=48$ and $max=102$
+
+\subsection*{(c)}
+Let $i$ be the ith number
+
+Therefore for the 80th percentile $\frac{80}{100}= \frac{i}{12+1}$
+
+$i=10.4$
+
+The tenth number is 93 and the eleventh number is 96
+
+Therefore the 80th percentile number is $93+(96-93)* (10.4-10)=94.2$
+
+\subsection*{(d)}
+$Var[score]= \frac{1}{12}* (78^2+48^2+69^2+102^2+78^2+93^2+69^2+84^2+96^2+59^2+87^2+93^2) - \left( \frac{239}{3} \right)^2= \frac{8570}{33} \approx 259.70$
+
+$\sigma=\sqrt{Var[score]}= \sqrt{259.70} \approx 16.12$
+
+\section*{3-32}
+From the data given in this question, we can know
+
+$\mu_{orange}=\frac{1}{10}*(14+12+10.5+9.3+8.4+7.6+5.9+5.4+4.8) \approx 8.65556$
+
+$\mu_{apple}=\frac{1}{9}*(16+15+13.5+11.3+10.4+9.6+9.6+7.9+7.4) \approx 11.1889$
+
+$\therefore Z_{orange}=\frac{16.4-8.65556}{2.85}= 2.72$
+
+$Z_{apple}= \frac{19-11.1889}{2.848}=2.74$
+
+$\because Z_{apple}>Z_{orange}$
+
+Therefore Ryan discovers the most impressive fruit
+
+\end{spacing}
+\end{document} 

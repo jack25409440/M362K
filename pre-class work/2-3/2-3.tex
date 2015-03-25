@@ -1,0 +1,41 @@
+\documentclass[12pt]{article}
+
+\usepackage{graphicx}
+\usepackage[margin=1.0in]{geometry}
+\usepackage{amsmath}
+\usepackage{cases}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{grffile}
+\usepackage{setspace}
+
+\setlength\parindent{0pt}
+
+\author{Xiaohui Chen \\EID: xc2388}
+\title{M 362K Pre-Class Work for 2/3}
+
+\begin{document}
+\maketitle
+\begin{spacing}{2.0}
+
+\section*{2-56}
+\subsection*{(a)}
+$Pr(1st-ace)=\frac{4}{52}=\frac{1}{13}$
+
+\subsection*{(b)}
+$Pr(2nd-ace|1st-ace)=\frac{3}{51}=\frac{1}{17}$
+
+\subsection*{(c)}
+Using Bayes' Theorem, we get: 
+
+$Pr(1st-ace|not\ 2nd-ace)=\frac{Pr(not\ 2nd-ace|1st-ace) * Pr(1st-ace)}{Pr(not\ 2nd-ace|1st-ace) * Pr(1st-ace) + Pr(not\ 2nd-ace|not\ 1st-ace) * Pr(not\ 1st-ace)} = \frac{(1-\frac{1}{17})*\frac{1}{13}}{(1-\frac{1}{17})*\frac{1}{13}+ \frac{47}{51}*\frac{12}{13}}= \frac{4}{51}$
+
+\section*{2-59}
+$Pr(1997|accident)=$
+
+$\frac{Pr(accident|1997)*Pr(1997)}{ Pr(accident|1997)*Pr(1997)+ Pr(accident|1998)*Pr(1998)+ Pr(accident|1999)*Pr(1999)+ Pr(accident|other)*Pr(other)}= \frac{0.05*0.16}{0.05*0.16+ 0.02*0.18+ 0.03*0.20+ 0.04*0.46} \approx 0.22$
+
+Therefore the answer is (A)
+
+\end{spacing}
+\end{document} 
