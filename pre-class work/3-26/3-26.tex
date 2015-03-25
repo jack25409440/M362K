@@ -1,0 +1,117 @@
+\documentclass[12pt]{article}
+
+\usepackage{graphicx}
+\usepackage[margin=1.0in]{geometry}
+\usepackage{amsmath}
+\usepackage{cases}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{grffile}
+\usepackage{setspace}
+
+\setlength\parindent{0pt}
+
+\author{Xiaohui Chen \\EID: xc2388}
+\title{M 362K Pre-Class Work for 3/26}
+
+\begin{document}
+\maketitle
+\begin{spacing}{2.0}
+
+\section*{5-8}
+
+\subsection*{(a)}
+
+$\mu_X= E[X] = \int_{0}^{4} x\frac{x^3}{64} dx = 3.2$
+
+\subsection*{(b)}
+
+$E[X^2]= \int_{0}^{4} x^2\frac{x^3}{64} dx = 10.6667$
+
+\subsection*{(c)}
+
+$F_X(x)= \int \frac{x^3}{64} dx = \frac{x^4}{256}+C $, where C is a constant
+
+$\because F_X(0)=0$ and $F_X(4)=1$
+
+$\therefore C=0$
+
+$F_X(x)= \frac{x^4}{256}$
+
+\subsection*{(d)}
+
+$Pr(2 <x \le 3) = F_X(3)-F_X(2) = 0.253906$
+
+\section*{5-11}
+
+$Var[X] = E[X^2] - \left( E[X] \right)^2 = 10.6667-3.2^2 = 0.426667$
+
+\section*{5-17}
+
+From the question we know that $f'(x) = 6(1-x)- 6x$
+
+When $f'(x)= 0 $, $x=\frac{1}{2}$
+
+At the endpoints $f(x)=0$
+
+Therefore $x_{mode}=0.5$
+
+\section*{5-19}
+
+\subsection*{(a)}
+
+According to the properties of probability density functions, $\int_{0}^{1} cx(1-x^2) dx=1$
+
+$\int_{0}^{1} cx(1-x^2) dx= \frac{c}{4} =1$
+
+$\therefore c=4$
+
+\subsection*{(b)}
+
+From part (a) we can know that
+
+\begin{numcases}{f(x)=}
+4x(1-x^2) & for $0 \le x \le 1$\\
+0 & otherwise
+\end{numcases}
+
+$F(x)= \int f(x) dx = 2x^2-x^4 +C$, where C is a constant
+
+$\because F(0)=0$ and $F(1)=1$
+
+$\therefore C=0$
+
+\begin{numcases}{F(x)=}
+0 & if $x<0$\\
+2x^2-x^4 & if $0 \le x \le 1 $\\
+1 & if $x>1$
+\end{numcases}
+
+\subsection*{(c)}
+
+$\mu_X= E[X] = \int_{0}^{1} xf(x) dx = \int_{0}^{1} 4x^2(1-x^2) dx = \frac{8}{15} $
+
+\subsection*{(d)}
+
+$f'(x)= -8x^2+4(1-x^2)$
+
+When $f'(x)=0$, we have $x=\frac{1}{\sqrt{3}}$
+
+When at end points, $f(x)=0$
+
+Therefore the mode is $x_{mode}=\frac{1}{\sqrt{3}}$
+
+\subsection*{(e)}
+
+The median occurs when $F(x)= 0.5$
+
+Therefore $x_{median}= 0.541196$
+
+\subsection*{(f)}
+
+The value $x_{.21}$ occurs when $F(x)=0.21$
+
+$\therefore x_{.21}=0.333437$
+
+\end{spacing}
+\end{document}
