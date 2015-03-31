@@ -1,0 +1,38 @@
+\documentclass[12pt]{article}
+
+\usepackage{graphicx}
+\usepackage[margin=1.0in]{geometry}
+\usepackage{amsmath}
+\usepackage{cases}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{grffile}
+\usepackage{setspace}
+
+\setlength\parindent{0pt}
+
+\author{Xiaohui Chen \\EID: xc2388}
+\title{M 362K Pre-Class Work for 3/31}
+
+\begin{document}
+\maketitle
+\begin{spacing}{2.0}
+
+\section*{5-29}
+
+Let X be the random variable that indicates the loss
+
+Then $E[X]= E[X|loss]Pr[loss]+ E[X|no\ loss]Pr[no\ loss]= \int_{0}^{\infty} 2xe^{-2x} dx *0.9 = 0.45$
+
+\section*{5-31}
+
+We know that $Pr(Y>10) = 1- Pr(Y \le 10) = 1- \int_{1}^{10} \frac{2}{y^3} dy = 0.01$
+
+Let X denotes the benefit
+
+$E[X]= \int_{1}^{10} \frac{2y}{y^3} dy + 10*Pr(Y>10) = 1.9$
+
+Therefore the answer is (D)
+
+\end{spacing}
+\end{document}
